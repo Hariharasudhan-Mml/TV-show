@@ -1,0 +1,256 @@
+* {
+  margin: 0%;
+  padding: 0%;
+
+}
+body {
+  background-color: rgb(228, 228, 228);
+}
+
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 20px;
+}
+header > label {
+  color: darkcyan;
+  font-weight: 800;
+  margin-top: 10px;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+.searchShow {
+  margin-top: 10px;
+  width: 20vw;
+  height: 30px;
+}
+
+.foundShows {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  color: floralwhite;
+  text-transform: capitalize;
+  font-family: Geneva, Verdana, sans-serif;
+}
+.selectForShow {
+  padding: 5px;
+  margin: 15px 0;
+}
+
+.showbox {
+  margin: 10px 10px 30px 10px;
+  background-color: honeydew;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 0.1px black;
+}
+.showbox:hover {
+  cursor: pointer;
+  background-color: rgb(255, 166, 225);
+}
+.showName {
+  padding: 20px;
+}
+.innerBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.innerBox > img {
+  margin: 10px;
+}
+.showSummary {
+  width: 55vw;
+  font-size: 18px;
+  line-height: 26px;
+  word-spacing: 8px;
+  margin: 20px;
+  margin-right: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: blueviolet;
+}
+
+.sideBox {
+  width: 270px;
+  height: 300px;
+  margin: auto auto auto 10px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.sideBox * {
+  padding: 5px;
+}
+.sideBox > p {
+  font-family: "Courier New", Courier, monospace;
+  width: inherit;
+  word-wrap: break-word;
+}
+strong {
+  font-size: 17px;
+  color: gray;
+}
+.showsbutton {
+  width: 20vw;
+  display: inline-block;
+  margin-left: 10vw;
+  padding: 5px;
+  background-color: lightslategray;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  font-size: 20px;
+  border: none;
+  margin-bottom: 10px;
+}
+.showsbutton:hover {
+  cursor: pointer;
+  background-color: rgb(88, 121, 155);
+}
+
+/*          episodes page          */
+
+#root{
+  display: inline;
+}
+.showsSelect{
+  padding: 5px;
+  display: inline;
+  margin: 10px;
+}
+.select{
+  padding: 5px;
+  display: inline;
+  margin: 10px;
+}
+.search{
+padding: 5px;
+margin: 10px;
+}
+
+.backToShowsPage{
+  padding: 10px 10px;
+  color: red;
+box-shadow:2px 1px 3px 0.1px  crimson;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 17px;
+  border: none;
+  border-radius: 3px;
+  margin:5px;
+   background-color: rgb(242, 245, 48);
+   display: block;
+}
+
+.backToShowsPage:hover{
+  cursor: pointer;
+  color: rgb(242, 245, 48);
+  background-color: rgb(255, 45, 45);
+  box-shadow:2px 1px 3px 0.1px  rgb(0, 0, 0);
+}
+
+
+.foundEpisodes{
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 5px;
+  border-radius: 3px;
+  background-color: cornflowerblue;
+  color: floralwhite;
+  text-transform: capitalize;
+  font-family: Geneva, Verdana, sans-serif;
+}
+
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.box {
+  width: 350px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 0 10px 1px black;
+  margin: 2%;
+  border-radius: 5px;
+}
+
+.header {
+  color: rgb(255, 36, 36);
+  padding: 10px;
+border-radius: 5px;
+  box-shadow: 0 0 6px 1px black;
+}
+img {
+  margin: 20px 0;
+}
+.summary {
+  text-align: left;
+  margin: 0 20px 20px 20px;
+}
+
+.contents + button{
+margin-left: 100px;
+font-size: 18px;
+background: rgb(197, 193, 193);
+border-radius: 5px;
+text-transform: capitalize;
+padding: 10px 20px;
+color:indigo;
+outline:none
+}
+.contents + button:hover{
+background: rgb(138, 135, 135);
+color:rgb(221, 173, 255)
+}
+@media (max-width: 768px) {
+  .showbox {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .innerBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .innerBox > img {
+    margin: 10px;
+  }
+  .showSummary {
+    width: auto;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: blueviolet;
+  }
+
+  .sideBox {
+    width: inherit;
+    height: 200px;
+    padding-left: 50px;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .sideBox * {
+    padding: 5px;
+  }
+  .sideBox > p {
+    font-family: "Courier New", Courier, monospace;
+    width: inherit;
+    font-size: 14px;
+  }
+  strong {
+    font-size: 15px;
+    color: gray;
+  }
+}
